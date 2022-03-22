@@ -5,4 +5,4 @@ SetWorkingDir, %A_ScriptDir%
 Run, explorer.exe
 WinWaitActive,Explorer, ,3
 WinMove, 0, 0
-WinMove, , , , , 100, 100
+WinMove, , , , , 100, 1000

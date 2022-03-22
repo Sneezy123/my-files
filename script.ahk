@@ -1,5 +1,4 @@
 #SingleInstance, Force
-SendMode Input
 SetWorkingDir, %A_ScriptDir%
 program:="notepad.exe"
 w:=1000
@@ -9,8 +8,7 @@ WinWaitActive, ahk_exe %program%
 WinMove, A_ScreenWidth/2-w/2, A_ScreenHeight/2-h/2
 WinMove, , , , , %w%, %h%
 i := 1
-Loop, 1000
+Loop, 100
 {
-    Send, %i%`n
-    i := i + 1
+    SendInput, Tim hat h a w a`n
 }

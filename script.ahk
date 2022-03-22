@@ -8,14 +8,9 @@ Run, %program%
 WinWaitActive, ahk_exe %program%
 WinMove, A_ScreenWidth/2-w/2, A_ScreenHeight/2-h/2
 WinMove, , , , , %w%, %h%
-
-fibonacci(a)
+i := 1
+Loop, 1000
 {
-    if (a <= 1)
-    {
-        Send, a
-    }
-    Send, %a%
-    a:=fibonacci(a-1)+fibonacci(a-2)
+    Send, %i%`n
+    i := i + 1
 }
-

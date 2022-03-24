@@ -10,5 +10,5 @@ WinMove, , , , , %w%, %h%
 i := 1
 Loop, 100
 {
-    SendInput, {U+26A0}Tim hat h a w a{U+26A0}`n
+    SendInput, {U+26A0}Tim hat h a w a{U+26A0}
 }

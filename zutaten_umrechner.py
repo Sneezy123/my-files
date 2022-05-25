@@ -19,7 +19,6 @@ wert = float(res.group())
 cups = reg.search("[\s|0-9]*[cC][uU][pP][sS]?", user_input)
 
 if res:
-    print(wert)
     if cups:
         mills = wert * 240
         print(reg.sub("[0-9]+\.*[0-9]*\s*[cC][uU][pP][sS]?",

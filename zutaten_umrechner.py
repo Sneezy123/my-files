@@ -28,3 +28,6 @@ if res:
 
 else:
     print("keine Zahl!")
+
+
+input("Drücke Enter, um fortzufahren...")

@@ -14,6 +14,6 @@ user_input = input("Gebe die Zutat ein, die Du umwandeln möchtest? (Maximal ein
 
 
 if reg.search("[0-9]", user_input):
-    print("Zahl!!")
+    print("Zahl!")
 else:
-    print("keine Zahl!!")
+    print("keine Zahl!")

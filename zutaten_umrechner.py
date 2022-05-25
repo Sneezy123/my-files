@@ -22,7 +22,7 @@ if res:
     print(wert)
     if ml:
         cups = wert * 240
-        reg.search("[0-9]+", user_input)
+        print(reg.sub("[0-9]+", cups, user_input))
 
 
 else:

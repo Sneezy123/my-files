@@ -20,7 +20,16 @@ def search_image(query: str) -> None:
 
     # F-string with search URL
     url = f"https://www.bing.com/images/search?q={query}"
-    req = requests.get(url)  # Request content from the URL
+    try:
+        req = requests.get(url)  # Request content from the URL
+    except:
+        raise Exception(
+            '''
+            ##############################################################################################################################
+            ########## Connection to the internet could not be made. Try turning your internet on or wait if that doesn't work. ##########
+            ##############################################################################################################################
+            ''')
+
     data = req.text  # Get the text from the request
 
     # Get the URLs for the images and save them in a list. Filter 'bing' URLs
